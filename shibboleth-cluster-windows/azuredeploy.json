@@ -225,13 +225,32 @@
               "idleTimeoutInMinutes": 15
             },
             "name": "lbrule"
+          },
+          {
+            "properties": {
+              "frontendIPConfiguration": {
+                "id": "[concat(resourceId('Microsoft.Network/loadBalancers', 'loadBalancer'), '/frontendIpConfigurations/LBFE')]"
+              },
+              "backendAddressPool": {
+                "id": "[concat(resourceId('Microsoft.Network/loadBalancers', 'loadBalancer'), '/backendAddressPools/LBBAP')]"
+              },
+              "probe": {
+                "id": "[concat(resourceId('Microsoft.Network/loadBalancers', 'loadBalancer'), '/probes/lbprobe')]"
+              },
+              "protocol": "Tcp",
+              "frontendPort": 8443,
+              "backendPort": 8443,
+              "idleTimeoutInMinutes": 15
+            },
+            "name": "lbrule8443"
           }
         ],
         "probes": [
           {
             "properties": {
-              "protocol": "Tcp",
-              "port": 80,
+              "protocol": "Http",
+              "port": 8080,
+              "requestPath": "/",
               "intervalInSeconds": 15,
               "numberOfProbes": 2
             },
