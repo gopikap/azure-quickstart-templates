@@ -279,6 +279,20 @@
               "priority": 1000,
               "direction": "Inbound"
             }
+          },
+          {
+            "name": "Port_3306",
+            "properties": {
+              "description": "Allow 3306",
+              "protocol": "*",
+              "sourcePortRange": "*",
+              "destinationPortRange": "3306",
+              "sourceAddressPrefix": "*",
+              "destinationAddressPrefix": "*",
+              "access": "Allow",
+              "priority": 1010,
+              "direction": "Inbound"
+            }
           }
         ]
       }
