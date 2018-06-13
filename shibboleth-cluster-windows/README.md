@@ -102,8 +102,9 @@ Create a deployment of Shibboleth IDP using this template and RDP into the VM de
     - set IDP_HOME=c:/opt/shibboleth-idp
 
 ## Restart the servlet container 
-    - cd C:\apache-tomcat-7.0.67\bin\
-    - Start-Process .\startup.bat
+    - cd C:\apache-tomcat-8.5.31\bin\
+    - shutdown.bat
+	- startup.bat
     
 ## Test your installation
     - Follow the steps on http://testshib.org to test the shibboleth installation as IDP
