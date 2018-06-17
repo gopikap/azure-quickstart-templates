@@ -75,7 +75,7 @@
     "virtualNetworkName": "[concat(parameters('uniqueNamePrefix'),'VNet')]",
     "subnetRef": "[resourceId('Microsoft.Network/virtualNetworks/subnets', variables('virtualNetworkName'), variables('subnetName'))]",
     "installScriptName": "install_shibboleth_idp.sh",
-    "installScriptUri": "[concat('https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/shibboleth-singlevm-ubuntu/', variables('installScriptName'))]",
+    "installScriptUri": "[concat('https://raw.githubusercontent.com/gopikap/azure-quickstart-templates/development-shibboleth/shibboleth-singlevm-ubuntu/', variables('installScriptName'))]",
     "installCommand": "[concat('sh ', variables('installScriptName'), ' ', parameters('uniqueNamePrefix'), ' ', parameters('location'))]"
   },
   "resources": [

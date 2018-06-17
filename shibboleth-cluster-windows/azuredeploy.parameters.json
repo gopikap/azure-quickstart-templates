@@ -20,8 +20,8 @@
     "mySqlPasswordForIdpUser": {
       "value": "GEN-PASSWORD"
     },
-    "vmCountFrontend": {
-        "value": 1
+    "numberOfInstances": {
+      "value": 1
     }
   }
 }
