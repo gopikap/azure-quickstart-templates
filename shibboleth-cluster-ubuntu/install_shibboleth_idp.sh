@@ -73,10 +73,10 @@ chmod 777 jstl-1.2.jar
 
 echo "==============> Start Shibboleth installation"
 echo "==============> Download Shibboleth"
-
+apt-get -y install unzip
 # install Shibboleth
 wget http://shibboleth.net/downloads/identity-provider/3.3.3/shibboleth-identity-provider-3.3.3.zip -O shibboleth.zip
-jar -xf shibboleth.zip
+unzip shibboleth.zip
 
 cd shibboleth-identity-provider-3.3.3
 chmod -R +x bin

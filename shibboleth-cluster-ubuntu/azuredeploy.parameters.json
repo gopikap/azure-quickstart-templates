@@ -3,31 +3,25 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "adminUsername": {
-      "value": "GEN-UNIQUE-8"
+      "value": "laxmiadmin"
     },
     "adminPassword": {
-      "value": "GEN-PASSWORD"
+      "value": "Vainavi@123@123"
     },
-    "uniqueNamePrefix": {
-      "value": "GEN-UNIQUE-8"
+    "publicDnsName": {
+      "value": "laxmidns"
     },
     "mySqlPasswordForRootUser": {
-      "value": "GEN-PASSWORD"
+      "value": "Vainavi@123@123"
     },
     "mySqlIdpUser": {
-      "value": "GEN-UNIQUE-8"
+      "value": "lduser"
     },
     "mySqlPasswordForIdpUser": {
-      "value": "GEN-PASSWORD"
+      "value": "Vainavi@123@123"
     },
-    "vmSizeFrontend": {
-      "value": "Standard_A0"
-    },
-    "vmSizeDB": {
-      "value": "Standard_A0"
-    },
-    "vmCountFrontend": {
-        "value": 1
+    "numberOfInstances": {
+      "value": 1
     }
   }
 }
