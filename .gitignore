@@ -32,4 +32,3 @@ Nese_OMS_NEstedforOMSWS.json
 test/template-validation-tests/package-lock.json
 test/template-validation-tests/mochawesome-report/*
 
-shibboleth-cluster-ubuntu/azuredeploy.parameters.json
