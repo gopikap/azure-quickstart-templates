@@ -7,6 +7,8 @@ mySqlPasswordForUser=$5
 SITENAME=$1.$2.cloudapp.azure.com
 DBSITENAME=$3.$2.cloudapp.azure.com
 
+mkdir /opt/shibboleth-idp
+
 INSTALLDIR=/opt/shibboleth-idp
 
 apt-get -y update
