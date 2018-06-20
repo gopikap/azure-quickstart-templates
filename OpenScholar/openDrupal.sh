@@ -52,4 +52,7 @@ cd /etc/apache2
 sed '/<Directory \/var\/www\/>/,/<\/Directory>/ s/AllowOverride None/AllowOverride All/' apache2.conf > apache2_new.conf
 mv apache2_new.conf apache2.conf
 sudo systemctl restart apache2
+cd /var/www/html/profiles/openscholar/modules/contrib/oembed/
+wget https://www.drupal.org/files/oembed-2021015-1.patch
+patch -p1 < oembed-2021015-1.patch
 EOF
